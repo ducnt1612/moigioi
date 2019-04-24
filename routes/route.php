@@ -16,4 +16,4 @@ Route::get('/{locale}', function ($locale) {
     return view('welcome');
 });
 
-//Route::get('admin/dashboard', 'Admin\AdminDashboardController@index')->name('admin.dashboard');
+Route::get('admin/dashboard', 'Admin\AdminDashboardController@index')->name('admin.dashboard');

@@ -1,3 +1,11 @@
 {
-  "adu": "Me encanta programar."
+  "moi_gioi": "Chứng khoán",
+  "dashboard": "Trang chủ",
+  "user_manager": "Quản lí người dùng",
+  "id" : "ID",
+  "user_name" : "Tên đăng nhập",
+  "full_name" : "Tên đầy đủ",
+  "created_at" : "Ngày tạo",
+  "updated_at" : "Ngày cập nhật",
+  "admin_manager" : "Quản lí admin"
 }
