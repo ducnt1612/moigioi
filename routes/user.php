@@ -11,17 +11,7 @@
 |
 */
 
-Route::get('/{locale}', function ($locale) {
-    App::setLocale($locale);
-    return view('welcome');
-});
 
-//Route::get('admin/dashboard', 'Admin\AdminDashboardController@index')->name('admin.dashboard');
-
-Route::group(['prefix'=>'admin'],function (){
-    require __DIR__ . '/admin.php';
-});
-
-Route::group(['prefix'=>'admin'],function (){
-    require __DIR__ . '/user.php';
-});
+Route::get('user/manager', 'Admin\AdminUserManagerController@index')->name('user.manager');
+Route::get('user/edit-user/{id}', 'Admin\AdminUserManagerController@getItem')->name('user.getItem');
+Route::post('user/edit-user/{id}', 'Admin\AdminUserManagerController@postItem')->name('user.postItem');

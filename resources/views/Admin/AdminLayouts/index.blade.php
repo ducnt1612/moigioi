@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Buttons</title>
+    <title>{{__('admin_title')}}</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{URL::asset('css/admin/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('css/admin/admin.css')}}" rel="stylesheet">
 
 </head>
 
@@ -41,7 +42,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{route('admin.dashboard')}}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>{{__('dashboard')}}</span></a>
         </li>
@@ -51,14 +52,14 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item active">
-            <a class="nav-link" href="">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>{{__('user_manager')}}</span></a>
-        </li>
-        <li class="nav-item active">
             <a class="nav-link" href="{{route('admin.dashboard')}}">
                 <i class="fas fa-fw fa-chart-area"></i>
                 <span>{{__('admin_manager')}}</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{{route('user.manager')}}">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>{{__('user_manager')}}</span></a>
         </li>
     </ul>
     <!-- End of Sidebar -->

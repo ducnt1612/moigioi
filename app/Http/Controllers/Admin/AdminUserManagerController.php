@@ -20,4 +20,21 @@ class AdminUserManagerController extends BaseAdminController
         $allUser = $this->_user_client->getAllUserClient();
        return view('Admin.AdminUserManager.ManageUser',['allUser'=>$allUser]);
     }
+
+    public function getItem($id){
+        $data = [];
+        if($id > 0){
+            $data = $this->_user_client->getItemById($id);
+        }
+        return view('Admin.AdminUserManager.EditUser',['data'=>$data]);
+    }
+
+    public function postItem($id){
+        dd($_POST);
+        $data = [];
+        if($id > 0){
+            $data = $this->_user_client->getItemById($id);
+        }
+        return view('Admin.AdminUserManager.EditUser',['data'=>$data]);
+    }
 }

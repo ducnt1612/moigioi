@@ -7,5 +7,11 @@
   "full_name" : "Tên đầy đủ",
   "created_at" : "Ngày tạo",
   "updated_at" : "Ngày cập nhật",
-  "admin_manager" : "Quản lí admin"
+  "admin_manager" : "Quản lí admin",
+  "birthday" : "Ngày sinh",
+  "address" : "Địa chỉ",
+  "admin_title" : "Trang quản trị Phái Sinh 30",
+  "edit" : "Sửa",
+  "user_information" : "Thông tin người dùng",
+  "phone" : "Số điện thoại"
 }
