@@ -22,6 +22,6 @@ Route::group(['prefix'=>'admin'],function (){
     require __DIR__ . '/admin.php';
 });
 
-Route::group(['prefix'=>'admin'],function (){
+Route::group(['prefix'=>'user'],function (){
     require __DIR__ . '/user.php';
 });

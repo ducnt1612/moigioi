@@ -15,3 +15,4 @@
 Route::get('user/manager', 'Admin\AdminUserManagerController@index')->name('user.manager');
 Route::get('user/edit-user/{id}', 'Admin\AdminUserManagerController@getItem')->name('user.getItem');
 Route::post('user/edit-user/{id}', 'Admin\AdminUserManagerController@postItem')->name('user.postItem');
+Route::get('user/dashboard', 'User\UserDashboardController@index')->name('user.dashboard');

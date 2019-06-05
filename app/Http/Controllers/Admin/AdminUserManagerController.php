@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\BaseAdminController;
 use App\Http\Model\UserClient;
+use Illuminate\Support\Facades\Redirect;
 
 class AdminUserManagerController extends BaseAdminController
 {
@@ -30,11 +31,10 @@ class AdminUserManagerController extends BaseAdminController
     }
 
     public function postItem($id){
-        dd($_POST);
-        $data = [];
+        $data = $_POST;
         if($id > 0){
-            $data = $this->_user_client->getItemById($id);
+            $data = $this->_user_client->updateItem($id,$data);
         }
-        return view('Admin.AdminUserManager.EditUser',['data'=>$data]);
+        return Redirect::route('user.getItem',['id'=>$id]);
     }
 }
