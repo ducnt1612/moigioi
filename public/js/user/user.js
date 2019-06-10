@@ -5,7 +5,7 @@ function scrollFunction() {
         document.getElementById("navbar").style.padding = "10px 10px";
         document.getElementById("logo").style.fontSize = "25px";
     } else {
-        document.getElementById("navbar").style.padding = "50px 10px";
+        document.getElementById("navbar").style.padding = "40px 10px";
         document.getElementById("logo").style.fontSize = "35px";
     }
 }
